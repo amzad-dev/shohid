@@ -1,0 +1,42 @@
+@media screen and (max-width: 1332px) {
+    .shohid-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media screen and (max-width: 1104px) {
+    .shohid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 708px) {
+    .shohid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header-section .navbar-container .logo-area img {
+        display: none;
+    }
+}
+@media screen and (max-width: 566px) {
+    .shohid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-section .navbar-container {
+        flex-direction: column-reverse;
+    }
+    .header-section .navbar-container .language-area .language {
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .hero-section .form-container {
+        flex-direction: column;
+    }
+    .hero-section .form-container .form {
+        flex-basis: auto !important;
+    }
+}
+@media screen and (max-width: 384px) {
+    .shohid-container {
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

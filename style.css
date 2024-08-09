@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Css reset */
+body,
+html {
+  font-family: "Anek Bangla", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+:root {
+    --colorRed: #BE2828;
+    --colorYellow: #d97506;
+    --colorBlackLight: #4f4f4f;
+    --colorBlack: #000;
+    --coorWhite: #fff;
+    --colorLightMystified: #E3F5E3;
+}
+
+*:focus {
+    outline: none;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,
+img {
+    border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol,
+ul {
+    list-style: none;
+}
+caption,
+th {
+    text-align: left;
+}
+q:before,
+q:after {
+    content: "";
+}
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+}
+legend {
+    color: #000;
+}
+#yui3-css-stamp.cssreset {
+    display: none;
+}
+
+/* Main Style Start */
+
+/* Header Section Style */
+
+.header-section {
+    background: url('./images/bannerBg.png') no-repeat;
+    background-position-x: 200px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.header-section .navbar-container{
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.header-section .navbar-container .logo-area{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-section .navbar-container .logo-area img{
+    width: 120px;
+    height: 40px;
+    object-fit: cover;
+}
+.header-section .navbar-container .nav-links ul{
+    display: flex;
+    gap: 20px;
+}
+.header-section .navbar-container .nav-links ul li a{
+    color: var(--colorBlack);
+    text-decoration: none;
+    display: inline-block;
+}
+a.active-link{
+    color: var(--colorRed) !important;
+}
+.header-section .navbar-container .nav-links ul li a:hover{
+    color: var(--colorRed);
+}
+.header-section .navbar-container .language-area .language{
+    background: var(--colorLightMystified);
+    padding: 2px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.header-section .navbar-container .language-area .language a{
+    text-decoration: none;
+    color: var(--colorBlackLight);
+    padding: 2px 15px;
+}
+.header-section .navbar-container .language-area .language a:first-child {
+    background: var(--colorBlackLight);
+    display: inline-block;
+    color: var(--coorWhite);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.header-section .header-content-container{
+    max-width: 1300px;
+    margin: 70px auto 50px;
+    padding: 0 10px;
+}
+.header-section .header-content-container h2{
+    line-height: 35px;
+    font-weight: 600;
+}
+.header-section .header-content-container a{
+    margin-top: 20px;
+    background: var(--colorRed);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--coorWhite);
+    padding: 10px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+/* Hero Section Style */
+.hero-section{
+    margin: 30px 0;
+}
+.hero-section .info-container{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.hero-section .info-container .info{
+    flex-basis: 400px;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.hero-section .info-container .info:nth-child(1){
+    border: 1px solid rgba(255, 0, 0, 0.241);
+    background: rgba(255, 0, 0, 0.091);
+}
+.hero-section .info-container .info:nth-child(1) .info-left{
+    color: var(--colorRed);
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-section .info-container .info:nth-child(1) .info-right{
+    color: var(--colorRed);
+    font-size: 30px;
+    font-weight: 800;
+}
+.hero-section .info-container .info:nth-child(2){
+    border: 1px solid rgba(255, 166, 0, 0.385);
+    background: rgba(255, 166, 0, 0.155);
+}
+.hero-section .info-container .info:nth-child(2) .info-left{
+    color: var(--colorYellow);
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-section .info-container .info:nth-child(2) .info-right{
+    color: var(--colorYellow);
+    font-size: 30px;
+    font-weight: 800;
+}
+.hero-section .info-container .info:nth-child(3){
+    border: 1px solid #4f4f4f4d;
+    background: #4f4f4f2c;
+}
+.hero-section .info-container .info:nth-child(3) .info-left{
+    color: var(--colorBlackLight);
+    font-size: 25px;
+    font-weight: 600;
+}
+.hero-section .info-container .info:nth-child(3) .info-right{
+    color: var(--colorBlackLight);
+    font-size: 30px;
+    font-weight: 800;
+}
+.hero-section .form-container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.hero-section .form-container .form-text h1{
+    font-weight: 600;
+}
+.hero-section .form-container .form-text h1 span{
+    color: var(--colorRed);
+    padding: 0 10px;
+}
+.hero-section .form-container .form{
+    flex-basis: 450px;
+}
+.hero-section .form-container .form .form-box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--colorBlackLight);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: #e7e7e764;
+}
+.hero-section .form-container .form .form-box input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.hero-section .form-container .form .form-box input::placeholder{
+    color: #000;
+}
+.devider{
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin-bottom: 30px;
+}
+/* Shohid Section Style */
+.shohid-container{
+    max-width: 1300px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 30px;
+}
+.shohid-container .shohid{
+    position: relative;
+}
+.shohid-container .shohid .shohid-image span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--colorRed);
+    padding: 2px 15px;
+    color: var(--coorWhite);
+}
+.shohid-container .shohid .shohid-image{
+    width: 100%;
+    height: 192.66px;
+    overflow: hidden;
+}
+.shohid-container .shohid .shohid-image img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    -o-transition: .5s all ease;
+}
+.shohid-container .shohid .shohid-image img:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.shohid-container .shohid .shohid-info h3{
+    font-weight: 600;
+}
+.shohid-container .shohid .shohid-info p{
+    line-height: 25px;
+}
+.shohid-container .shohid .shohid-info p span{
+    color: var(--colorBlackLight);
+}
+/* Main Style End */
