@@ -349,11 +349,11 @@ a.active-link{
     width: 100%;
     height: 100%;
     cursor: pointer;
-    transition: .5s all linear;
-    -webkit-transition: .5s all linear;
-    -moz-transition: .5s all linear;
-    -ms-transition: .5s all linear;
-    -o-transition: .5s all linear;
+    transition: .3s all linear;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -ms-transition: .3s all linear;
+    -o-transition: .3s all linear;
 }
 .shohid-container .shohid .shohid-image img:hover{
     transform: scale(1.05);
